@@ -34,8 +34,8 @@ df = load_data()
 benchmark = load_benchmark()
 df["timestamp"] = pd.to_datetime(df["timestamp"])
 
-st.title("FlowCast traffic operations")
-st.caption("Northline Corridor smart traffic forecasting dashboard")
+st.title("FlowCast Traffic Operations")
+st.caption("Northline Corridor Smart Traffic Forecasting Dashboard")
 
 with st.sidebar:
     st.header("Filters")
