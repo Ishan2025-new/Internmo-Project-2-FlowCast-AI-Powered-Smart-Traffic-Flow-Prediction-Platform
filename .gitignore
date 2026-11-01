@@ -1,0 +1,4 @@
+.venv/*
+__pycache__/*
+dashboard/__pycache__/*
+src/__pycache__/*

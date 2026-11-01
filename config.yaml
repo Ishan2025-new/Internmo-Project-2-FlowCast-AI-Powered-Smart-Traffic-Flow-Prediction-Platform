@@ -1,0 +1,26 @@
+project:
+  name: flowcast
+  random_seed: 42
+
+paths:
+  raw_data: data/raw
+  interim_data: data/interim
+  processed_data: data/processed
+  models: models
+  reports: reports
+
+splits:
+  validation_start: "2025-04-16"
+  test_start: "2025-05-01"
+
+sequence:
+  lookback_windows: 8
+  forecast_horizon_windows: 1
+
+training:
+  lstm_units: [64, 32]
+  dropout: 0.2
+  learning_rate: 0.001
+  early_stopping_patience: 10
+  lr_reduction_patience: 5
+  congestion_loss_weight: 0.5
